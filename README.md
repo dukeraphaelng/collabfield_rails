@@ -29,9 +29,11 @@ This is a step-by-step instruction guide on how to build a rails app improving f
 - git push origin master
 - rails s
 - *Go to* localhost:3000
-
-
-
-### Step 2: Generating pages controller
-
 - rails g / generate controller pages
+
+
+
+### Step 2: Adding and Configuring Bootstrap
+
+- Check the latest bootstrap version
+  https://github.com/twbs/bootstrap-rubygem
