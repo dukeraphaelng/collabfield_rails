@@ -37,3 +37,57 @@ This is a step-by-step instruction guide on how to build a rails app improving f
 
 - Check the latest bootstrap version
   https://github.com/twbs/bootstrap-rubygem
+
+  - gem 'boostrap', '>= 4.0.0'
+
+  - bundle install
+
+  - @import "bootstrap";
+
+  - remove:
+
+    - ```scss
+      *= require_self
+      *= require_tree .
+      ```
+
+  - ```bash
+    gem 'jquery-rails'
+    ```
+
+  - ```
+    //= require jquery3
+    //= require popper
+    //= require bootstrap-sprockets
+    ```
+
+  - ```rb
+    <%= render 'layouts/navigation' %>
+    ```
+
+    Only add the following code after putting itmes in partials/layout/ otherwise return errors.
+
+  - ```scss
+    @import "partials/layout/*";
+    ```
+
+  - Add <div class="container"> to link_to
+
+
+
+### Step 3: Configuring Devise
+
+- ```
+  gem 'devise'
+  ```
+
+  ```bash
+  rails generate devise:install
+  ```
+
+- ```bash
+  rails generate devise User
+  ```
+
+- Restart server, otherwise returns undefined method error
+
