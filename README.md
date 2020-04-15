@@ -91,3 +91,27 @@ This is a step-by-step instruction guide on how to build a rails app improving f
 
 - Restart server, otherwise returns undefined method error
 
+
+
+...
+
+
+
+Change from this
+
+- ```bash
+  rails db:drop
+  rails db:create
+  rails db:migrate
+  ```
+
+to this
+
+- ```bash
+  rake db:drop
+  rake db:create
+  rake db:migrate
+  ```
+
+
+
