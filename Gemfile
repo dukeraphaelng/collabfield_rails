@@ -15,6 +15,9 @@ gem 'puma', '~> 3.11'
 # Use Devise for authentication
 gem 'devise'
 
+# Use Bootstrap Form (esp in Devise)
+gem "bootstrap_form", "~> 4.0"
+
 # Use Bootstrap as CSS framework
 gem 'bootstrap', '~> 4.4.1'
 # Use SCSS for stylesheets
