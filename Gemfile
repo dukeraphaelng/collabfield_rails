@@ -12,6 +12,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 
+# Use Devise for authentication
+gem 'devise'
+
 # Use Bootstrap as CSS framework
 gem 'bootstrap', '~> 4.4.1'
 # Use SCSS for stylesheets
