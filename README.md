@@ -111,7 +111,23 @@ to this
   rake db:drop
   rake db:create
   rake db:migrate
+  
+  https://stackoverflow.com/questions/20464924/rails-migration-does-not-change-schema-rb
   ```
+
+
+
+- Bootstrap form
+  https://github.com/bootstrap-ruby/bootstrap_form
+
+
+
+More bootstrap
+
+
+
+hamburger menu bar
+https://www.freecodecamp.org/forum/t/difficulties-getting-the-hamburger-menu-icon-to-appear-in-bootstrap-4/109191
 
 
 
