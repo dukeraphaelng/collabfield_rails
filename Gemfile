@@ -16,7 +16,7 @@ gem 'puma', '~> 3.11'
 gem 'devise'
 
 # Use Bootstrap Form (esp in Devise)
-gem "bootstrap_form", "~> 4.0"
+gem 'bootstrap_form', '~> 4.0'
 
 # Use Bootstrap as CSS framework
 gem 'bootstrap', '~> 4.4.1'
@@ -66,10 +66,26 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
+  # gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
+  ## Logic testing
+  # Test framework
+  gem 'rspec-rails', '~> 3.6'
+  # Add sample data
+  gem 'factory_girl_rails'
+  # Test requests and responses
+  gem 'rails-controller-testing'
+  # Simulate UX
+  gem 'capybara'
+  # Include JavaScript in tests
+  gem 'poltergeist'
+  # Support headless drivers - poltergeist
+  gem 'headless'
+  # Test database after JavaScript tests
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
