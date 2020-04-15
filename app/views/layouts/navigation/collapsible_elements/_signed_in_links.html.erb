@@ -1,0 +1,18 @@
+<li class="nav-item dropdown dropdown-menu pc-menu">
+  <a id="user-settings" class="nav-item dropdown nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown-target" href="#">
+    <span id="user-name" class="nav-item dropdown"><%= current_user.name %></span>
+    <span class="caret"></span>
+  </a>
+
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_target">
+    <li><%= link_to 'Edit Profile', edit_user_registration_path, class:'nav-item dropdown-item' %></li>
+    <li><%= link_to 'Log out', destroy_user_session_path, method: :delete, class:'nav-item dropdown-item' %></li>
+  </ul>
+</li>
+
+<li class="nav-item dropdown mobile-menu">
+  <%= link_to 'Edit Profile', edit_user_registration_path %>
+</li>
+<li class="nav-item dropdown mobile-menu">
+  <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+</li>
