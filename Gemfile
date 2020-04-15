@@ -14,7 +14,6 @@ gem 'puma', '~> 3.11'
 
 # Use Bootstrap as CSS framework
 gem 'bootstrap', '~> 4.4.1'
-# gem 'bootstrap-sass', '~> 3.3.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use jQuery due to Boostrap dependency
