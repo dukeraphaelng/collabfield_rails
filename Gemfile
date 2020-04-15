@@ -75,7 +75,8 @@ group :test do
   # Test framework
   gem 'rspec-rails', '~> 3.6'
   # Add sample data
-  gem 'factory_girl_rails'
+  # gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   # Test requests and responses
   gem 'rails-controller-testing'
   # Simulate UX

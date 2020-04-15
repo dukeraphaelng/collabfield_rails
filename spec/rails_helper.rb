@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 require 'capybara/poltergeist'
-require 'factory_girl_rails'
+# require 'factory_girl_rails'
+require 'factory_bot_rails'
 require 'capybara/rspec'
 
 Capybara.javascript_driver = :poltergeist
@@ -73,7 +74,7 @@ RSpec.configure do |config|
   end
 
   config.include Devise::Test::IntegrationHelpers, type: :feature
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
